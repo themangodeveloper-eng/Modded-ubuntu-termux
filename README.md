@@ -94,9 +94,11 @@ devtools
 ```
 ./mods/devtools.sh
 ```
+extras
 ```bash
 ./mods/extras.sh
 ```
+shell
 ```bash
 ./mods/shell.sh
 ```
