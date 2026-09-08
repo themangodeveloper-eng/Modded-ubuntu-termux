@@ -38,26 +38,6 @@ Launch your modded Ubuntu anytime with:
 ```bash
 ./start-ubuntu.sh
 ```
-
-## Repo Structure
-
-```
-Modded-ubuntu-termux/
-├── install.sh          # main installer
-├── mods/
-│   ├── desktop.sh       # XFCE + VNC
-│   ├── devtools.sh      # dev environment
-│   ├── shell.sh         # zsh + starship + aliases
-│   └── extras.sh        # extra CLI tools
-├── configs/
-│   ├── .bashrc
-│   ├── .vimrc
-│   └── starship.toml
-├── start-ubuntu.sh      # launcher script
-├── README.md
-└── LICENSE
-```
-
 ## Mods
 
 | Mod | Description |
@@ -104,6 +84,23 @@ Then run:
 Still not working?
 
 Please include the complete error message when reporting the problem. This makes it easier to identify and fix the issue.
+
+## Mods
+desktop
+```bash
+./mods/desktop.sh
+```
+devtools
+```
+./mods/devtools.sh
+```
+```bash
+./mods/extras.sh
+```
+```bash
+./mods/shell.sh
+```
+
 ## Disclaimer
 
 This project runs Ubuntu in a userspace container (`proot-distro`) — it is **not** a full virtualized environment. Some features (systemd, raw sockets, certain kernel modules) will not work. Use at your own risk.
