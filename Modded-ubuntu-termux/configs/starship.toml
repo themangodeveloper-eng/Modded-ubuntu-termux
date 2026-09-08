@@ -1,0 +1,19 @@
+# Modded-ubuntu-termux Starship configuration
+
+format = "$os$username$hostname$directory$git_branch$git_status$python$nodejs$character"
+
+[character]
+success_symbol = "[➜](bold green)"
+error_symbol = "[✗](bold red)"
+
+[directory]
+truncation_length = 3
+
+[git_branch]
+symbol = " "
+
+[python]
+symbol = "🐍 "
+
+[nodejs]
+symbol = " "
